@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elemento PICTURE</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="assets/Favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!--https://caniuse.com -->
+    <picture>
+        <source srcset="img/img1.jpeg" media="(min-width: 800px)"></source>
+        <source srcset="img/img2.webp" media="(min-width: 640px) and (max-width: 800px)"></source>
+        <source srcset="img/img3.png" media="(min-width: 640px)"></source>
+        <img srcset="img/img3.jpg" alt="Imagen en local">
+     </picture>
     
 </body>
-</html>
+</html> 
